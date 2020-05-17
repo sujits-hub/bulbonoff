@@ -1,0 +1,20 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BULB ON</title>
+    <link rel="stylesheet" href="{% static 'bulb.css'%}">
+  </head>
+  <body>
+    <div id="main">
+      <img src="{% static 'on.jpeg'%}" alt="no image">
+      <form  action="" >
+        {%csrf_token%}
+        <input type="submit" name="" value="OFF BULB" id="btn">
+
+      </form>
+
+    </div>
+  </body>
+</html>
